@@ -29,5 +29,41 @@ namespace Collections_Tests
             
 
         }
+
+        [Fact]
+        public void CanRemoveBookFromLibraryTest()
+        {
+            // Arrange
+            Library<Book> library = new Library<Book>();
+
+            Book book1 = new Book
+            {
+                Title = "War and Peace",
+            };
+
+            Book book2 = new Book
+            {
+                Title = "Harry Potter",
+            };
+
+            Book book3 = new Book
+            {
+                Title = "Lord of the rings",
+            };
+
+            // Act
+            library.AddBook(book1);
+            library.AddBook(book2);
+            library.AddBook(book3);
+
+            library.RemoveBook(book1);
+
+            // Assert
+            Assert.False(library.IsAvailable(book1));
+            Assert.Equal("Lord of the rings", library[1].Title);
+
+
+
+        }
     }
 }

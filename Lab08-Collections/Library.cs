@@ -42,6 +42,37 @@ namespace Lab08_Collections
             count++;
         }
 
+        public void RemoveBook(T book)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (IsAvailable(book))
+                {
+                    for (int j = 0; j < count - i; j++)
+                    {
+                        books[i] = books[i + 1];
+                        i++;
+                    }
+                    
+                }
+            }
+
+            count--;
+
+        }
+
+        public bool IsAvailable(T book)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (books[i].Equals(book))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < count; i++)
