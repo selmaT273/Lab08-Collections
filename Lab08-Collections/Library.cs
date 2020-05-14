@@ -79,6 +79,16 @@ namespace Lab08_Collections
             return false;
         }
 
+        public override string ToString()
+        {
+            string booksString = "";
+            for (int i = 0; i < count; i++)
+            {
+                booksString += $"{books[i]}\n";
+            }
+            return booksString;
+        }
+
         public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < count; i++)

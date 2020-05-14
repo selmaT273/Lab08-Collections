@@ -9,6 +9,10 @@ namespace Lab08_Collections
         public int NumberOfPages { get; set; }
         public Genre Genre { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Title}";
+        }
     }
 
     // List we can iterate over limited to only these genres
