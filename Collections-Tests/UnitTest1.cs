@@ -25,13 +25,10 @@ namespace Collections_Tests
 
             // Assert
             Assert.Equal(1, library.Count);
-            
-            
-
         }
 
         [Fact]
-        public void CanRemoveBookFromLibraryTest()
+        public void CanRemoveFirstBookFromLibraryTest()
         {
             // Arrange
             Library<Book> library = new Library<Book>();
@@ -61,6 +58,40 @@ namespace Collections_Tests
             // Assert
             Assert.False(library.IsAvailable(book1));
             Assert.Equal("Lord of the rings", library[1].Title);
+        }
+
+        [Fact]
+        public void CanRemoveMiddleBookFromLibraryTest()
+        {
+            // Arrange
+            Library<Book> library = new Library<Book>();
+
+            Book book1 = new Book
+            {
+                Title = "War and Peace",
+            };
+
+            Book book2 = new Book
+            {
+                Title = "Harry Potter",
+            };
+
+            Book book3 = new Book
+            {
+                Title = "Lord of the rings",
+            };
+
+            // Act
+            library.AddBook(book1);
+            library.AddBook(book2);
+            library.AddBook(book3);
+
+            library.RemoveBook(book2);
+
+            // Assert
+            //Assert.False(library.IsAvailable(book2));
+            Assert.Equal(2, library.Count);
+            Assert.Equal("War and Peace", library[0].Title);
 
 
 
