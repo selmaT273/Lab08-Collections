@@ -44,17 +44,23 @@ namespace Lab08_Collections
 
         public void RemoveBook(T book)
         {
+            if (!IsAvailable(book))
+            {
+                throw new ArgumentException("This book is not available.");
+            }
+
             for (int i = 0; i < count; i++)
             {
-                if (IsAvailable(book))
+                if (books[i].Equals(book))
                 {
                     for (int j = 0; j < count - i; j++)
                     {
                         books[i] = books[i + 1];
                         i++;
                     }
-                    
+                    break;
                 }
+                    
             }
 
             count--;
