@@ -8,7 +8,7 @@ namespace Lab08_Collections
     {
         // Fields
         T[] books;
-        int count = 0;
+        public int count = 0;
 
         // Constructors
 

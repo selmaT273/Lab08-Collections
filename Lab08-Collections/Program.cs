@@ -49,6 +49,8 @@ namespace Lab08_Collections
 
                 string userChoice = Console.ReadLine().ToLower();
 
+                // TODO: refactor to use switch case structure
+                // TODO: add in functionality for bookbag options
                 if (userChoice == "view all books")
                 {
                     Console.WriteLine($"{Library}");

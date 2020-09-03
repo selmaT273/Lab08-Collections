@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08-Collections", "Lab08-Collections\Lab08-Collections.csproj", "{27F580F0-171E-4B87-BA06-49884FDEAF15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections-Tests", "Collections-Tests\Collections-Tests.csproj", "{B4A97DE3-D253-4474-BC92-C2010A793AD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections-Tests", "Collections-Tests\Collections-Tests.csproj", "{BAF78DBD-BC5D-4356-83D3-3DC1EAC6EDCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,9 @@ Global
 		{27F580F0-171E-4B87-BA06-49884FDEAF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F580F0-171E-4B87-BA06-49884FDEAF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F580F0-171E-4B87-BA06-49884FDEAF15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4A97DE3-D253-4474-BC92-C2010A793AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4A97DE3-D253-4474-BC92-C2010A793AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4A97DE3-D253-4474-BC92-C2010A793AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4A97DE3-D253-4474-BC92-C2010A793AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF78DBD-BC5D-4356-83D3-3DC1EAC6EDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF78DBD-BC5D-4356-83D3-3DC1EAC6EDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF78DBD-BC5D-4356-83D3-3DC1EAC6EDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF78DBD-BC5D-4356-83D3-3DC1EAC6EDCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
